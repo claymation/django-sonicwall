@@ -23,7 +23,7 @@ SONICWALL_IDLE_TIMEOUT = getattr(settings, 'SONICWALL_IDLE_TIMEOUT', 300)
 SONICWALL_CALLBACK = "externalGuestLogin.cgi"
 
 # Set the xPath to the Sonicwall reply
-RESPONSE_CODE_XPATH = "SonicWALLAccessGatewayParam/AuthenticationReply/ResponseCode"
+RESPONSE_CODE_XPATH = "AuthenticationReply/ResponseCode"
 
 ERROR_CODES = {
     "2": "Your LHM session has expired. You may try to initiate a new session.",
