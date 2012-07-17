@@ -13,7 +13,7 @@ setup(
     description = "Django app for authorizing SonicWall LHM wifi clients",
     keywords = "sonicwall,lhm,wifi,hotspot",
     packages = ['sonicwall'],
-    install_requires = ['requests'],
+    install_requires = ['requests', 'django'],
     long_description = read('README'),
     classifiers = [
         "Development Status :: 1 - Planning",
