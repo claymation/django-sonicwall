@@ -106,7 +106,7 @@ def authorize(request, template_name='sonicwall/authorize.html'):
         else:
             # Authorization succeeded
             if response_code == "50":
-                self.logger.info('Succesful LHM authorization; redirecting to: %s', request.GET['req'])
+                logger.info('Succesful LHM authorization; redirecting to: %s', request.GET['req'])
                 return redirect(request.GET['req'])
 
             # Authorization failed, so determine why
