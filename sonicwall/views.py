@@ -82,7 +82,7 @@ def authorize(request, template_name='sonicwall/authorize.html'):
             # POST the authorization parameters to the LHM
             try:
                 logger.debug("POSTing to SonicWall %s with payload: %s", lhm_url, payload)
-                response = requests.post(lhm_url, payload)
+                response = requests.post(lhm_url, payload, verify=False)
             except Exception:
                 logger.exception("Uncaught exception while communicating with LHM")
                 raise
