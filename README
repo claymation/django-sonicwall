@@ -1,0 +1,5 @@
+django-lhm -- Django app for authorizing SonicWall LHM WiFi clients
+
+For more information, refer to the SonicWall documentation:
+
+http://www.sonicwall.com/downloads/SonicWALL_LHM.pdf
